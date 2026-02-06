@@ -12,7 +12,6 @@ export class FinderController {
     return this.finderService.create(createFinderDto);
   }
 
-
   @Get()
   findAll() {
     return this.finderService.findAll();
