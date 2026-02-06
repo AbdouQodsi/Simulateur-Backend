@@ -17,14 +17,4 @@ export class FinderController {
   findAll() {
     return this.finderService.findAll();
   }
-
-  @Get(':id')
-  findOne(@Param('id') id: string) {
-    return this.finderService.findOne(+id);
-  }
-
-  @Delete(':id')
-  remove(@Param('id') id: string) {
-    return this.finderService.remove(+id);
-  }
 }

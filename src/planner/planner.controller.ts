@@ -11,19 +11,4 @@ export class PlannerController {
   create(@Body() createPlannerDto: CreatePlannerDto) {
     return this.plannerService.create(createPlannerDto);
   }
-
-  @Get()
-  findAll() {
-    return this.plannerService.findAll();
-  }
-
-  @Get(':id')
-  findOne(@Param('id') id: string) {
-    return this.plannerService.findOne(+id);
-  }
-
-  @Delete(':id')
-  remove(@Param('id') id: string) {
-    return this.plannerService.remove(+id);
-  }
 }
